@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Training</h1>
+    </header>
+    <form>
+        First Name: <input type="text" name="firstName"><br>
+        Last Name: <input type="text" name="lastName"><br>
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password"><br>
+        Birthday: <input type="date"><br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br>
+        Pets:
+        <input type="checkbox" name="pets1" value="cat"> Cat
+        <input type="checkbox" name="pets2" value="dog"> Dog
+        <input type="checkbox" name="pets3" value="bird"> Bird
+        <br>
+        Car:
+        <select name="car">
+            <option value="mazda">Mazda</option>
+            <option value="bmw">BMW</option>
+            <option value="ferrari">Ferrari</option>
+        </select><br>
+        <input type="submit" value="Register!">
+        <input type="reset" value="Reset">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+            </tr>
+            <tr>
+                <td>Content 3</td>
+                <td>Content 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <textarea name="textArea" rows="10" cols="20" placeholder="Write your text here!"></textarea>
+</body>
+<hr>
+<br>
+<video src="kitties.mp4" width="300" height="200"
+    poster="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    controls loop muted autoplay></video><br>
+<audio src="meow_mix.mp3" controls>Cat</audio>
+</html>
