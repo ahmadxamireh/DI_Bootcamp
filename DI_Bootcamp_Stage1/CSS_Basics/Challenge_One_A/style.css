@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(226, 172, 127);
+  font-size: 13px;
+  margin: 1% 20%;
+}
+
+#wrap {
+  background-color: rgb(245, 245, 220);
+  text-align: center;
+  border-right: 3px dashed black;
+  border-left: 3px dashed black;
+}
+
+li {
+  list-style: none;
+  font-style: italic;
+}
+
+p,
+ul {
+  padding: 0 15px;
+}
+
+h1 {
+  border-top: 3px dashed black;
+  border-bottom: 3px dashed black;
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+li span.firstLetter {
+  font-size: 150%;
+}
+
+.copyright {
+  border-bottom: 3px dashed black;
+  padding-bottom: 10px;
+
+a {
+  text-decoration: none;
+}
