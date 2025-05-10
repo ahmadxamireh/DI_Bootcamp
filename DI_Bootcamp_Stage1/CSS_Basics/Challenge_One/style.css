@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(58, 196, 251);
+    font-size: 12px;
+}
+
+#wrap {
+    margin-right: 0 auto;
+}
+
+div ul {
+    list-style: none;
+    text-align: center;
+}
+
+li span.firstLetter {
+    font-size: 150%;
+}
