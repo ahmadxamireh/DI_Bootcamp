@@ -1,0 +1,16 @@
+URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W1/D2/ExercisesXP/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 1, while the code correctly uses sets and their methods, adding and removing the last added element isn't well-defined for unordered sets.  Consider explicitly stating which element to remove by value rather than position. 
+- Exercise 2's solution is inefficient because it creates a new tuple instead of modifying the original (which is impossible for tuples). The comment correctly explains this limitation. Improve clarity by explicitly stating that tuples are immutable and demonstrate this using a `try-except` block to catch `TypeError` when attempting in-place modification.
+- Exercise 4 could be made more concise. Instead of appending each element individually, consider using list comprehension or a generator for better readability. 
+- Exercise 5’s first loop can be improved; using `range(1, 21)` is more efficient than manually handling the loop condition.
+- Exercise 7 uses a nested `while` loop, which is unnecessarily complex. Simplify using a single loop and conditional logic.
+- Exercise 8 is good, but add input validation to handle unexpected user input (like non-string values).
+- In Exercise 9, error handling should be included (e.g., ensure the user inputs numbers). Add clear prompts for the user and handle invalid input gracefully (e.g., with `try-except` blocks).
+- In Exercise 10, you correctly remove 'Pastrami' and process orders; however, the solution creates an unnecessary intermediate `finished_sandwiches` list, as you can print directly from `sandwich_orders` after removing the items. The intermediate list adds unnecessary complexity. Consider simplifying by printing directly from the processed `sandwich_orders` list.
+Brief justification:
+- correctness: The code generally addresses the tasks in each exercise, demonstrating the correct use of sets, tuples, lists, loops, and conditional statements. There are minor issues (as noted above) with the assumptions made around removing items from unordered sets and the most efficient way to handle tuples, but the logic largely produces correct results.
+- readability: The code's readability is decent, with mostly clear variable names and comments explaining the logic. However, some exercises could be simplified and made more efficient, and certain improvements are needed to make it easier to follow the intended logic (as noted above).
+- performance: The performance is mostly good, except in Exercise 2 and 7, which could benefit from optimization. The overall use of loops and data structures is efficient, though the unnecessary intermediate list in Exercise 10 reduces efficiency.
+- security: The code doesn't have any significant security vulnerabilities. It doesn't handle user input validation in some exercises (as noted above), which is a minor security concern. Overall, the exercises' scope doesn't involve substantial security risks.
+
