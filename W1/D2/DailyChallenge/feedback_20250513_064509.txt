@@ -1,0 +1,12 @@
+URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W1/D2/DailyChallenge/DailyChallenge.py
+suggestions for improvement:
+- Challenge 1: Add input validation to handle non-integer inputs.  The program currently crashes if the user enters non-numeric data.
+- Challenge 1:  Use more descriptive variable names (e.g., `number`, `length`, `multiples`).
+- Challenge 2: The `while` loop in Challenge 2 is less readable than a `for` loop with a slightly more complex conditional.  A `for` loop would be easier to understand and maintain.
+- Challenge 2:  Consider using a more concise method for removing consecutive duplicates, perhaps using list comprehension or a more advanced string manipulation technique.
+Brief justification:
+- correctness: Challenge 1 correctly generates a list of multiples as specified, achieving 95% because of the lack of input validation. Challenge 2 accurately removes consecutive duplicate letters from a string as described, achieving a score of 95%.
+- readability: The code is mostly readable, but variable names in Challenge 1 could be improved for clarity. The while loop in Challenge 2 could be replaced with a more readable for loop.  Therefore, the readability score is 85%.
+- performance: The algorithms used for both challenges are reasonably efficient for the problem size, but there's room for improvement in Challenge 2.  The current performance is sufficient for most use cases, hence 90%.
+- security: The code does not have any apparent security vulnerabilities.  There's no interaction with external systems or user-provided data that could be exploited.  Therefore, the score is 100%.
+
