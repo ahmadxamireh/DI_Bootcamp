@@ -1,0 +1,11 @@
+URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W1/D3/DailyChallenge/DailyChallenge.py
+suggestions for improvement:
+- In Challenge 1, using a `defaultdict` from the `collections` module would make the code slightly more concise and efficient by eliminating the need for the `if-else` block within the loop. 
+- In Challenge 2,  the use of `try-except` blocks around the `int()` conversions could improve robustness by gracefully handling potential `ValueError` exceptions if the input price strings are not properly formatted.  
+- For both challenges, adding more comprehensive docstrings would significantly improve readability and understanding for other developers.
+Brief justification:
+- correctness: Both Challenge 1 and Challenge 2 correctly fulfill all requirements outlined in the Chapter Content/Questions. Challenge 1 accurately creates the dictionary with correct indices for each letter. Challenge 2 correctly cleanses the input data, calculates affordable items, handles the empty list scenario, and sorts the output as expected, matching all example outputs.  The code adheres precisely to the specifications.
+- readability: The code is well-structured and easy to follow. Variable names are descriptive. The logic is clear in both challenges.  However, adding comments to explain the purpose of certain sections and better docstrings would enhance understanding, particularly for more complex scenarios. The use of f-strings for output adds to readability.
+- performance: The code's performance is reasonably good for the given task, with time complexity of O(n) for both challenges. However, in Challenge 1, the `if-else` block adds a minor overhead. Using `defaultdict` from the `collections` module can slightly improve performance. For Challenge 2, the string manipulation in data cleaning might be optimized but the impact is minimal for small data sizes. For larger datasets, more optimized string processing functions could be considered.
+- security: The code does not have any apparent security vulnerabilities. It handles user inputs and internal data processing appropriately without risks of code injection or similar issues.  The code safely converts strings to integers using `int()`, preventing potential errors which could be handled by error handling. The input validation is appropriate for this context.
+
