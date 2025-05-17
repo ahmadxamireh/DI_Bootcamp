@@ -1,0 +1,12 @@
+URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W1/D1/ExercisesXP/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 3, the code should provide the actual output instead of just describing it.  The code should execute the comparison and print the boolean result or the error. 
+- Exercise 8 could improve error handling. What if the user enters non-alphanumeric characters? 
+- Improve the user experience in Exercise 7 and 9 by adding input validation to handle non-numeric input gracefully.  For example, use a `while` loop and exception handling (`try-except`) to ensure the user enters a valid number.
+- Exercise 9 could use more descriptive variable names (e.g., `user_height` instead of `height`).
+Brief justification:
+- correctness: The code correctly solves most of the exercises.  The minor deductions are due to Exercise 3 not actually running the code and printing the results, and Exercise 8 lacking robustness against unexpected user input. The rest of the exercises are accurately implemented according to the instructions.
+- readability: The code is generally well-structured and easy to follow. However, some variable names could be more descriptive, and the comments in Exercise 3 could be improved by showing the actual output instead of just describing it.
+- performance: The code's performance is efficient for the given tasks. There are no obvious performance bottlenecks.
+- security: The code has a minor security vulnerability in Exercises 7 and 9.  It doesn't handle cases where the user enters non-numeric input, which could lead to errors.  Additionally, Exercise 8's comparison is case-insensitive which is good practice but the user might input unexpected characters.
+
