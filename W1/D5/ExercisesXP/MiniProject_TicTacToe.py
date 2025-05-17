@@ -14,7 +14,6 @@
 # You’ll need a way to represent the 3x3 grid.
 # A list of lists (a 2D list) is a good choice.
 # Initially, each cell in the grid should be empty (e.g., represented by a space ‘ ‘).
-from typing import Any
 
 # Step 2: Displaying the Game Board
 # Create a function called display_board() to print the current state of the game board.
