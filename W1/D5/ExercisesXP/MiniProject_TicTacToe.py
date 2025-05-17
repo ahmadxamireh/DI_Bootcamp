@@ -20,7 +20,7 @@
 # The output should visually represent the 3x3 grid.
 # Think about how to format the output to make it easy to read.
 
-def display_board(board: list) -> None:
+def display_board(board: list[list[str]]) -> None:
     """
     Prints the current state of the game board
     :param board: The 2D matrix (game board).
@@ -36,7 +36,7 @@ def display_board(board: list) -> None:
 # Validate the input to ensure it’s within the valid range and that the chosen cell is empty.
 # Think about how to ask the user for input, and how to validate that input.
 
-def player_input(player: str, board: list) -> tuple[int, int]:
+def player_input(player: str, board: list[list[str]]) -> tuple[int, int]:
     """
     Asks the player for a position in the 2D matrix between 1 and 3. If the position is already taken or out of range
     or an invalid value was given, asks for a new position.
@@ -46,7 +46,7 @@ def player_input(player: str, board: list) -> tuple[int, int]:
     """
     while True:
         try:
-            location = input(f'Player {player}, please enter a position: ')
+            location = input(f'Player {player}, please enter a position (separated by space): ')
             row, column = location.strip().split()  # unpacking a list into two variables
             x, y = int(row), int(column)  # breaks the code if the values are strings and goes to except
 
@@ -66,7 +66,7 @@ def player_input(player: str, board: list) -> tuple[int, int]:
 # If a player has won, return True; otherwise, return False.
 # Think about how to check every possible winning combination.
 
-def check_win(board: list, player: str) -> bool:
+def check_win(board: list[list[str]], player: str) -> bool:
     """
     Checks if there is a winner by traversing throw rows/columns/diagonals.
     :param board: The 2D matrix (game board).
@@ -84,32 +84,22 @@ def check_win(board: list, player: str) -> bool:
         if column.count(player) == 3:
             return True
 
-    # check if diagonally has the player's mark 3 times; winner
-    right_diagonal = []
-    left_diagonal = []
-    # populate the left and right diagonal values
-    for i in range(3):
-        if i == 0:  # at row 1, add first value for right nd last value for left diagonals
-            right_diagonal.append(board[i][0])
-            left_diagonal.append(board[i][-1])
-        elif i == 1:  # at row 2, both diagonals share the center value
-            right_diagonal.append(board[i][1])
-            left_diagonal.append(board[i][1])
-        else:  # at row 3, add last value for right nd first value for left diagonals
-            right_diagonal.append(board[i][-1])
-            left_diagonal.append(board[i][0])
     # if the player's mark was found 3 times in either diagonal; winner
-    if right_diagonal.count(player) == 3:
+    right_diagonal = [board[i][i] == player for i in range(3)]
+    if all(right_diagonal): # all: Return True if bool(x) is True for all values x in the iterable.
         return True
-    if left_diagonal.count(player) == 3:
+
+    left_diagonal = [board[i][2-i] == player for i in range(3)]
+    if all(left_diagonal):
         return True
+
     return False  # no winner
 
 # Step 5: Checking for a Tie
 # Create a function to check if the game has resulted in a tie.
 # The function should check if all positions of the board are full, without a winner.
 
-def check_tie(board: list) -> bool:
+def check_tie(board: list[list[str]]) -> bool:
     """
     Checks if the game board is filled with no empty spaces in any position.
     :param board: The 2D matrix (game board).
@@ -142,7 +132,7 @@ def check_tie(board: list) -> bool:
 def play():
     # initialize a 3x3 grid of spaces; a space represents each cell.
     # loops 3 times, and at each iteration creates a list of 3 spaces
-    board = list(list(' ' for _ in range(3)) for _ in range(3))
+    board = [[' ' for _ in range(3)] for _ in range(3)]
     current_player = 'X'
     while True:
         display_board(board)  # display the current state of the board
@@ -158,6 +148,6 @@ def play():
             display_board(board)
             print('It\'s a tie!')
             break
-        current_player = 'X' if current_player == 'O' else 'O'  # switch between players
+        current_player = 'O' if current_player == 'X' else 'X'  # switch between players
 
 play()
