@@ -1,0 +1,10 @@
+URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W1/D5/DailyChallenge/DailyChallenge.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 perfectly addresses the prompt's requirements.  However, it could be made slightly more robust by handling edge cases, such as empty input or input with only spaces.
+- Challenge 2: The `get_longest_word` function in Challenge 2 has a minor flaw. It doesn't handle punctuation correctly within words, it only considers spaces as word separators.  The prompt explicitly states that punctuation should be considered part of the word.
+Brief justification:
+- correctness: Challenge 1's code correctly takes comma-separated words as input, sorts them alphabetically, and outputs the sorted list in the same format. The only minor issue is the lack of input validation for empty or whitespace-only strings. Challenge 2's code mostly works but incorrectly splits words that contain internal punctuation. It does not fully satisfy the challenge's requirement to treat punctuation as part of the word.
+- readability: The code is well-structured and easy to follow. Variable names are descriptive, and the code's logic is straightforward.  Comments are helpful but not excessive.
+- performance: The algorithms used in both challenges are efficient. The sorting in Challenge 1 is O(n log n), and the linear scan in Challenge 2 is O(n). There are no obvious performance bottlenecks.
+- security: No security issues are present in this code.  It only takes user input and performs string manipulation. There is no interaction with external systems or data that could create security vulnerabilities.
+
