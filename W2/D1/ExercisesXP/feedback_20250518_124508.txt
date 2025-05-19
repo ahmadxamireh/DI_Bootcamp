@@ -1,0 +1,12 @@
+URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D1/ExercisesXP/ExercisesXP.py
+suggestions for improvement:
+- In `find_oldest_cat`, the logic could be simplified using the `max` function with a key.
+- In `Zoo.sort_animals()`, the function sorts and groups animals. Consider separating the sorting and grouping logic for better readability and maintainability.  The function both sorts and groups; consider making these two separate functions.
+- Add docstrings to functions to clarify their purpose, parameters, and return values.
+- The `Zoo` class's `get_groups` method calls `sort_animals()` which prints to the console.  Avoid this side effect.  Have `get_groups()` use the results already calculated by `sort_animals()`.
+Brief justification:
+- correctness: All exercises correctly implement the specified functionality.  The `Cat` exercise correctly finds and prints the oldest cat. The `Dog` exercise correctly instantiates objects, calls methods, and compares sizes. The `Song` exercise correctly prints song lyrics line by line. The `Zoo` exercise correctly adds, sells, displays, sorts, and groups animals. Each exercise fulfills all requirements specified in the chapter content.
+- readability: The code is generally well-structured and easy to follow.  However, some functions could benefit from more concise logic (e.g., `find_oldest_cat`) and better separation of concerns (e.g., `Zoo.sort_animals()`).  Adding docstrings would significantly improve readability.
+- performance: The performance is acceptable for small datasets but could be optimized. For example, the `find_oldest_cat` function could use the `max()` function instead of multiple if statements, while the Zoo class's `sort_animals()` method could be made more efficient by avoiding redundant operations.  In a very large zoo, the current implementation of `sort_animals()` could become less efficient. 
+- security: There are no apparent security vulnerabilities in the provided code. The code does not handle user input or external data, eliminating typical security risks.
+
