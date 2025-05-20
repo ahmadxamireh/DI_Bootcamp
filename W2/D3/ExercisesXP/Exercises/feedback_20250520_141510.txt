@@ -1,0 +1,17 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D3/ExercisesXP/Exercises/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 1, the docstrings are excellent, but consider adding type hints for better readability and maintainability.  For example: `def __init__(self, currency: str, amount: int):`
+- In Exercise 1,  the `__str__` and `__repr__` methods are almost identical. While this works, consider if a more distinct `__repr__` is needed for debugging purposes (maybe including the object's memory address).
+- In Exercise 7, there's a minor typo:  `'langauge_code'` should be `'language_code'`.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D3/ExercisesXP/Exercises/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D3/ExercisesXP/Exercises/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
