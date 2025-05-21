@@ -10,13 +10,11 @@
   "children": [
     {
       "firstName": "Alice",
-      "age": 6,
-      "favorite_color": "black"
+      "age": 6
     },
     {
       "firstName": "Bob",
-      "age": 8,
-      "favorite_color": "black"
+      "age": 8
     }
   ]
 }
