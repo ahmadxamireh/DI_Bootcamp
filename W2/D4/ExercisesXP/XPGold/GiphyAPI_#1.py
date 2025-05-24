@@ -48,4 +48,4 @@ if response.status_code == 200:
     for i, gif in enumerate(filtered_results[:10]):
         print(f"{i + 1}. {gif['url']}")
 else:
-    print(f"Request failed with status code {response.status_code}")
+    print(f'Request failed with status code {response.status_code}')
