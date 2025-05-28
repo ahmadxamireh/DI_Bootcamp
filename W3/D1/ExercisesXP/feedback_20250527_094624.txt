@@ -1,0 +1,48 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/ExercisesXP/building_management.js
+suggestions for improvement:
+- Use more descriptive variable names (e.g., instead of `second_tenant`, use `secondTenant`).
+- Consider adding comments to explain the purpose of the `if` condition more clearly.  While the logic is straightforward, a comment improves readability.
+- For improved readability and maintainability, you could extract the calculation of Sarah and David's combined rent into its own named variable.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/ExercisesXP/family.js
+suggestions for improvement:
+- The code could be slightly improved by adding comments explaining the purpose of each loop.  This would enhance readability, especially for someone less familiar with `for...in` loops.
+- Consider using more descriptive variable names. For example, `familyMembers` instead of `members`.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/ExercisesXP/list_of_people.js
+suggestions for improvement:
+- In exercise 1, part I, question 5, the instructions state that the copy should not include Mary or the user's name.  The current code correctly excludes the user's name, but it still includes Mary.  The `slice` method should be adjusted to start from index 1 to exclude Mary.
+- In exercise 1, part I,  consider adding comments to explain the purpose of each line of code, especially for those using less common methods like `splice` and `slice`.
+- Exercise 2 is missing.  The code provided only covers Exercise 1.
+- Exercises 3, 4, 5, 6, and 7 are missing. The code provided only addresses Exercise 1.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/ExercisesXP/repeat_the_question.js
+suggestions for improvement:
+- The use of a `do...while` loop is excellent for this scenario, ensuring at least one prompt and input validation.
+- Consider adding more robust input validation. For example, handle cases where a user enters non-numeric characters or a number that exceeds a reasonable upper limit.
+- A more descriptive message could be displayed if the number is not a valid number or is smaller than 10.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/ExercisesXP/rudolf.js
+suggestions for improvement:
+- The code correctly iterates through the object and concatenates the key-value pairs. However, it doesn't directly produce the exact string "my name is Rudolf the reindeer".  It produces "my name is Rudolf the reindeer", which has extra spaces.
+- Consider using template literals for better string construction and readability.  It would also make the code more concise and easier to understand.
+- While the for...in loop works, the order of keys is not guaranteed.  For this specific exercise, it works because the keys are in the right order, but in other scenarios, you might need to sort the keys if order matters.
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/ExercisesXP/secret_group.js
+suggestions for improvement:
+- The code correctly extracts the first letter of each name and concatenates them. However, it doesn't sort the resulting string alphabetically.  The exercise explicitly states that the first letters should be sorted alphabetically before forming the secret society name.
+- Add comments explaining the purpose of each step in the code, especially the `split()`, `sort()`, and `join()` methods.
+- Consider using a more descriptive variable name than `secret_name` (e.g., `societyName` or `secretSocietyName`).
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/ExercisesXP/your_favorite_colors.js
+suggestions for improvement:
+- The code could be slightly improved by using a switch statement or an array of suffixes for better readability and maintainability for a larger number of colors.
+- Consider adding error handling for cases where the `colors` array might be empty or have fewer than 5 elements.
+Correctness: 100%
+-----
