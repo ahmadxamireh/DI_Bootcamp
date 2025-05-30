@@ -1,0 +1,11 @@
+URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W1/D4/DailyChallenge/DailyChallenge.py
+suggestions for improvement:
+- The code correctly converts the matrix string into a 2D list and iterates through columns to extract alpha characters. However, the logic for replacing symbols with spaces needs improvement. It adds a space after every sequence of alpha characters, not just between alpha characters separated by symbols. The final `temp_string` is not added to `decoded_message` if it's not empty at the end.
+- The variable names could be more descriptive (e.g., `matrix` instead of `_2d_matrix_list`).
+- Consider using a more Pythonic approach for column-wise iteration, perhaps using `zip` with column extraction.
+Brief justification:
+- correctness: The code largely follows the steps outlined in the Chapter Content/Questions. It correctly converts the matrix string to a 2D list, iterates through columns, and filters alpha characters. However, it incorrectly handles the replacement of symbols with spaces, failing to precisely meet Step 4's requirements. The final result is partially correct but not entirely accurate due to this error. The 'hidden' message is 'This is a secret message'
+- readability: The code is reasonably well-structured and uses comments to explain the steps. However, some variable names could be improved for better clarity.  The logic for handling non-alpha characters could be made more concise and readable.
+- performance: The algorithm's time complexity is linear, O(n*m), where n is the number of rows and m is the number of columns, which is efficient for this problem size. It avoids unnecessary operations making it relatively performant.
+- security: This code doesn't involve any security-sensitive operations, so there are no security concerns.
+
