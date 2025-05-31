@@ -1,0 +1,34 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/Animations/Exercise1/timer.html
+suggestions for improvement:
+- **Exercise 1, Part III:** The code doesn't clear the interval when 5 paragraphs are added.  It only clears when the button is clicked.
+- **Exercise 1:**  The code is missing.  The HTML file references `timer.js`, but the JavaScript code implementing the timer functionality is not provided.
+- **Exercise 2:** The provided HTML and instructions for Exercise 2 are complete, but the JavaScript code to make the box move is missing.
+- **General:** Add comments to explain the purpose of different code sections and improve readability.  Use more descriptive variable names (e.g., instead of just `i`, use `paragraphCount`).
+Correctness: 70%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/Animations/Exercise1/timer.js
+suggestions for improvement:
+- Improve code comments to be more descriptive and explain the purpose of each section more clearly.
+- Add error handling for the case where the element with id 'container' or 'clear' is not found.
+- In Part III, consider using a more efficient method to check for the number of paragraphs.  Directly accessing `div.children.length` is slightly faster than `div.childElementCount`.
+- For Exercise 2, the code is missing.  This section should be implemented to complete the assignment.
+Correctness: 90%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/Animations/Exercise2/move_the_box.html
+suggestions for improvement:
+- The `move_the_box.js` file is missing, preventing a complete assessment of Exercise 2.  The provided HTML is structurally sound for the exercise.
+- Exercise 1's code is entirely missing.  No assessment can be made for this exercise.
+- In Exercise 2,  error handling is absent. What happens if the `animate` div reaches the end before `clearInterval` is called?  Add error handling.
+- For Exercise 2, the animation is implemented with a 1ms interval. This is inefficient and can lead to browser performance issues. Use a larger interval (e.g., 10ms or even more, depending on desired smoothness).
+- Separate concerns: the button click handler (`myMove`) and the animation logic should ideally be in separate functions for better organization and readability. 
+- For Exercise 2, using `requestAnimationFrame` instead of `setInterval` would lead to smoother animations and better browser performance.
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/Animations/Exercise2/move_the_box.js
+suggestions for improvement:
+- Add comments explaining the purpose of the `parseInt` function and the calculation to determine when to stop moving the box.
+- Consider using more descriptive variable names (e.g., `animationInterval` instead of `interval`).
+- The performance could be slightly improved by using `requestAnimationFrame` instead of `setInterval` for smoother animation. `setInterval` isn't the most precise way to do timed animations, it's better to use `requestAnimationFrame` in general for better control and browser optimization.
+- While functionally correct, the code lacks error handling (e.g., what if `document.getElementById` returns null?).
+Correctness: 95%
+-----
