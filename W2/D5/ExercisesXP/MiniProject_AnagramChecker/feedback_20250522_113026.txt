@@ -1,0 +1,18 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D5/ExercisesXP/MiniProject_AnagramChecker/anagram_checker.py
+suggestions for improvement:
+- The `anagram_checker.py` file should include error handling for file I/O operations, especially the `open()` function.  Consider using a `try-except` block to catch potential `FileNotFoundError` or `IOError` exceptions and handle them gracefully.
+- Improve efficiency of `get_anagrams` by pre-filtering words based on length before comparing letter counts. This avoids unnecessary calls to `is_anagram`.
+- Add more comprehensive docstrings to methods, explaining parameter types and return values more explicitly.
+- The `anagrams.py` file is missing; the instructions clearly state it should exist and handle user interaction.  The solution is incomplete without it.
+- The code lacks input validation in `AnagramChecker.is_valid_word` to explicitly check for the presence of only alphabetic characters.  Using `isalpha()` is a good start, but consider also checking for spaces and other non-alphabetic characters.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D5/ExercisesXP/MiniProject_AnagramChecker/anagrams.py
+suggestions for improvement:
+- The program abruptly exits after finding anagrams or determining a word is invalid.  It should return to the main menu instead.
+- Error handling could be improved. Instead of just printing error messages, consider using exceptions for better structure and potentially more informative error messages.
+- The `exit_program()` function is unnecessarily complex.  A simple `exit()` or `return` would suffice.
+- The nested loops make the code a little harder to follow. Consider restructuring the input and validation steps for better clarity.
+- The performance could be improved by optimizing the anagram search algorithm within `AnagramChecker`. Consider using a more efficient approach, especially for longer words.
+Correctness: 90%
+-----
