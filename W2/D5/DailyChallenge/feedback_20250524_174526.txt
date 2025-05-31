@@ -1,0 +1,15 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D5/DailyChallenge/Deck_of_Cards.py
+suggestions for improvement:
+- The docstrings in the `Card` and `Deck` classes are excellent and provide comprehensive information. However, they could be slightly improved by using consistent formatting and adhering to a specific style guide (e.g., Google Python Style Guide).
+- The `shuffle` method includes a check to ensure the deck contains 52 cards before shuffling.  While this is good defensive programming, consider raising an exception instead of just printing an error message.  This allows calling functions to handle the error appropriately.
+- The `deal` method returns a string.  Consider returning the `Card` object directly. This provides more flexibility to the calling function.
+- Add unit tests to ensure that the `Deck` and `Card` classes are working correctly. The current `main` function only demonstrates basic usage, which does not guarantee correctness for all cases.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D5/DailyChallenge/OOP_Quiz.py
+suggestions for improvement:
+- The code only addresses Exercise 1.  Exercise 2, requiring the implementation of `Card` and `Deck` classes, is missing.
+- The explanations in Exercise 1, while correct, could be more concise and use code examples to illustrate the concepts. For example, showing a simple class definition for encapsulation would improve understanding.
+- Add docstrings to the print statements to improve readability and explain the purpose of each print.
+Correctness: 80%
+-----

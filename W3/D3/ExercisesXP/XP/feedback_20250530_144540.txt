@@ -1,0 +1,72 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise1/change_the_article.html
+suggestions for improvement:
+- Exercise 1: Implement the bonus features (random font size on h1 hover and fade out on the second paragraph hover).
+- Exercise 1: Add error handling for cases where elements might not exist (e.g., before the DOM is fully loaded).
+- Exercise 2:  Improve the form handling. The provided code doesn't show how the form submission is handled. Add input validation (beyond just checking for emptiness) to handle potential issues like invalid character inputs.
+- Exercise 3: The code for Exercise 3 is missing entirely.  Implement the `getBoldItems`, `highlight`, and `returnItemsToDefault` functions, along with the mouseover/mouseout event listeners.
+- Exercise 4: The code for Exercise 4 is missing.  Implement the sphere volume calculation, ensuring proper input validation and handling of potential errors (like non-numeric input).
+- Add comments to explain the purpose of different code sections and make the code easier to understand.
+- Consider using more descriptive variable names. For example, instead of `fname`, use `firstName`.
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise1/change_the_article.js
+suggestions for improvement:
+- The solution for Exercise 1, Bonus 7 (fade-out effect), is incomplete.  It adds a class `fade-out`, but the CSS for this class is missing.  Add a CSS rule to define the `fade-out` animation.
+- In Exercise 2, error handling for empty inputs could be improved. A more user-friendly message could be shown instead of silently ignoring empty inputs.  Also, consider using a more semantic approach to create list items, such as using `document.createElement('li')` and setting innerText.
+- Exercise 3 could be improved by using more descriptive variable names (e.g., `allBoldElements` instead of `allBoldItems`).
+- In Exercise 3, the mouseover and mouseout event listeners could be combined into one event listener using `event.type` to determine the action to perform.
+- For better maintainability and readability in Exercise 1, consider separating the JavaScript code into functions based on the tasks (e.g., one function for adding event listeners, another for manipulating the DOM).
+- Add comments to explain the purpose of the functions and the overall logic in the code
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise1/style.css
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise2/work_with_forms.html
+suggestions for improvement:
+- The JavaScript code (work_with_forms.js) is missing.  The HTML structure is correct for Exercise 2, but without the JavaScript, the functionality cannot be assessed.
+- Add error handling for cases where the form inputs are empty. Currently, there's no explicit check for empty inputs.  The instructions state that empty inputs should be handled.
+- Improve the user experience by providing feedback to the user upon form submission (e.g., a success message or an error message if inputs are empty).
+- Consider using more descriptive variable names in the JavaScript code (if provided). This would greatly improve readability.
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise2/work_with_forms.js
+suggestions for improvement:
+- The code correctly retrieves the form and inputs using both ID and name attributes.  It also correctly handles form submission, preventing default behavior and appending user inputs to the unordered list. However, it lacks error handling for cases where the user might submit the form with empty fields.  Adding input validation and user feedback would improve the user experience.
+- Consider using more descriptive variable names. For example, instead of `firstName_byID`, use `firstNameInputById`.
+- The code could be made more concise and readable by using more functional approaches.  For instance, you could refactor the creation of list items into a separate function.
+- While the code prevents default form submission, it doesn't explicitly handle cases where one or both input fields are empty. A message indicating the error would enhance the user experience.
+Correctness: 90%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise3/transform_the_sentence.html
+suggestions for improvement:
+- The `transform_the_sentence.js` file is missing, preventing a complete assessment of correctness.  The HTML structure is correct for Exercise 3.
+- Add comments to explain the purpose of each function and key code sections within `transform_the_sentence.js` to improve readability.
+- The code's performance is likely good as it only manipulates the DOM elements, but consider using more efficient methods if you deal with a large number of elements in the future.
+- No security vulnerabilities are apparent in the provided HTML; however, the missing JavaScript file prevents a full security assessment. Sanitize any user input if the JavaScript involves user interactions (as in Exercise 2).
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise3/transform_the_sentence.js
+suggestions for improvement:
+- The `getBoldItems` function should be called after the DOM is fully loaded to ensure that the `querySelectorAll` method finds all the `<strong>` elements.  Consider wrapping the call to `getBoldItems()` and the event listeners within a `DOMContentLoaded` event listener.
+- Add error handling. What if there are no strong elements?  The code will throw an error. Add a check within `highlight` and `returnItemsToDefault` to ensure `allBoldItems` is not null before iterating.
+Correctness: 90%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise4/volume_of_a_sphere.html
+suggestions for improvement:
+- The provided HTML file only sets up the form for calculating the volume of a sphere.  There's no JavaScript code to actually perform the calculation.  The `volume_of_a_sphere.js` file is referenced but not included.
+- Add JavaScript code (within the `volume_of_a_sphere.js` file or directly in a `<script>` tag) to handle the form submission, calculate the volume using the radius, and update the volume input field.
+- The code should handle potential errors, such as non-numeric input in the radius field.
+Correctness: 0%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/ExercisesXP/XP/Exercise4/volume_of_a_sphere.js
+suggestions for improvement:
+- Add input validation to handle non-numeric radius inputs more robustly (e.g., using a regular expression).
+- Improve error handling by providing more specific error messages to the user, rather than a generic alert.
+- Consider adding visual feedback (e.g., changing the border color) to indicate invalid radius inputs.
+- The code lacks comments explaining the purpose of the `calculateSphereVolume` function and the event listener.
+- While the code works correctly, the use of `toFixed(2)` might not be ideal for all situations.  Consider offering the user a choice of decimal places or providing the full precision calculation result alongside the rounded one.
+Correctness: 95%
+-----

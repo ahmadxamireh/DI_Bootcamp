@@ -1,0 +1,7 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/DailyChallenge/C1/not_bad.js
+suggestions for improvement:
+- The second conditional statement (`if (wordBad < wordNot || (wordBad === -1 && wordNot === -1))`) can be simplified.  If 'not' is not found, `wordNot` will be -1, and the `wordBad > wordNot` condition in the first `if` statement will always be true (unless 'bad' is also not found). This means the second `if` statement is redundant except for the case where 'bad' appears before 'not'. Consider restructuring to handle all cases more concisely within a single conditional block or using an `else` block.
+- Add more robust error handling. What if neither "not" nor "bad" are present in the sentence?  The current code works in this scenario, but the logic could be clearer and the program more robust.  Consider adding a check to ensure both words exist before proceeding.
+- Improve variable names for better readability.  `wordNot` and `wordBad` are somewhat unclear; consider names like `notIndex` and `badIndex`.
+Correctness: 95%
+-----
