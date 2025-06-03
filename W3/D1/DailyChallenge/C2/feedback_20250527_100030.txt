@@ -1,0 +1,6 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D1/DailyChallenge/C2/stars.js
+suggestions for improvement:
+- The code only uses a single loop, failing to fulfill the requirement of implementing the solution using nested loops.
+- Add a second solution using nested for loops to complete the challenge fully.
+Correctness: 50%
+-----

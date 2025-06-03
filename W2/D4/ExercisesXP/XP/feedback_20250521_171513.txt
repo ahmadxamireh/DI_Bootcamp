@@ -1,0 +1,18 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D4/ExercisesXP/XP/ExercisesXP.py
+suggestions for improvement:
+- In `get_words_from_file`, consider adding more robust error handling for unexpected file contents (e.g., empty files, files with non-word characters).
+- The `get_random_sentence` function could be improved by using `random.sample` instead of `random.choices` if you need to ensure the generated sentence does not contain repeated words.  Currently it can repeat words, the instructions don't specify whether this is allowed or not.
+- Add comments to the JSON exercise explaining each step.
+- In the main function of Exercise 1,  a more informative error message could be given when the file is not found in addition to returning None.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D4/ExercisesXP/XP/sample.json
+suggestions for improvement:
+- The provided code snippet only addresses Exercise 2.  Exercise 1 (random sentence generator) is missing entirely.
+- Error handling (try-except blocks) is missing in Exercise 2.  The code should include error handling for file operations (e.g., `FileNotFoundError`) and JSON parsing errors.
+- Input validation is missing in Exercise 2. The date format 'YYYY-MM-DD' should be validated to ensure it's a valid date.
+- The code for Exercise 2 is missing the file I/O steps (saving the modified JSON to a file).
+- The solution for Exercise 2 lacks the explicit steps outlined in the instructions (loading JSON using json.loads(), accessing the salary key, adding the birth_date key, and saving to a file using json.dump()). While the result is correct, the steps are implicitly handled.
+- Add comments to explain the purpose of different code sections in both exercises to improve readability.
+Correctness: 80%
+-----
