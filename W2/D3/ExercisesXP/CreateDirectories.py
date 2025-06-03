@@ -25,17 +25,17 @@ for i in range(1, 13):
                 # Print a message if the folder already exists
                 print(f'└ Subfolder /D{j} already exists.')
 
-                # Create ExercisesXP and DailyChallenge folders inside each day
-                exercises_path = path + f'/W{i}/D{j}/ExercisesXP'
-                daily_challenge_path = path + f'/W{i}/D{j}/DailyChallenge'
+                # Create exercises and DailyChallenge folders inside each day
+                exercises_path = path + f'/W{i}/D{j}/exercises'
+                daily_challenge_path = path + f'/W{i}/D{j}/daily-challenge'
 
-                # Create ExercisesXP folder if it doesn't exist
+                # Create exercises folder if it doesn't exist
                 if not os.path.exists(exercises_path):
                     os.mkdir(exercises_path)
-                    print('  └ Subfolder /ExercisesXP created successfully.')
+                    print('  └ Subfolder /exercises created successfully.')
                 else:
                     # Print a message if the folder already exists
-                    print(f'{'│' if j != 5 else ' '} └ Subfolder /ExercisesXP already exists.')
+                    print(f'{'│' if j != 5 else ' '} └ Subfolder /exercises already exists.')
 
                 # Create DailyChallenge folder if it doesn't exist    
                 if not os.path.exists(daily_challenge_path):
