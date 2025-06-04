@@ -55,8 +55,11 @@ console.log(winners);
 
 // 3. Find and display the total score of the users. (Hint: The total score is 71)
 
-let finalScore = 0
-gameInfo.forEach(user => {
-    finalScore += user.score
-})
+// let finalScore = 0
+// gameInfo.forEach(user => {
+//     finalScore += user.score
+// })
+// console.log(finalScore);
+
+const finalScore = gameInfo.reduce((acc, curr) => acc + curr.score, 0)
 console.log(finalScore);
