@@ -12,7 +12,7 @@
 
 from pyowm.owm import OWM
 
-owm = OWM('a785333ad1751b04ca04739a1a5a0170')
+owm = OWM('insert api key here')
 weather_mgr = owm.weather_manager()
 
 observation = weather_mgr.weather_at_place('Tel Aviv, IL')
