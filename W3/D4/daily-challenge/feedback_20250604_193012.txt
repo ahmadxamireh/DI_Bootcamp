@@ -1,0 +1,7 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/daily-challenge/groceries.js
+suggestions for improvement:
+- Add comments explaining why the changes to `client` don't affect `user` and why changes to `groceries` do affect `shopping`.  This would enhance understanding.
+- The challenge asks to explain *why* the modifications do or don't propagate. The code correctly demonstrates the behavior, but lacks the explanatory comments answering the 'why'.
+- The instructions suggest creating a copy of the `groceries` object. While the code correctly demonstrates pass-by-reference behavior, explicitly creating a deep copy using the spread operator (`...`) or `JSON.parse(JSON.stringify())` would make the pass-by-value/reference concept clearer for the `shopping` object and better exemplify object cloning techniques. This isn't strictly required, but adding this would make the code even better.
+Correctness: 80%
+-----
