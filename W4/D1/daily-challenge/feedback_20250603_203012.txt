@@ -1,0 +1,7 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D1/daily-challenge/go-wildcards.js
+suggestions for improvement:
+- Use `const` instead of `let` for `finalScore` to reflect its immutability after initialization.
+- Consider using more descriptive variable names (e.g., `usernamesWithExclamation` instead of `usernames`).
+- For larger datasets,  `reduce` would be slightly more performant than `forEach` for calculating the total score.
+Correctness: 100%
+-----

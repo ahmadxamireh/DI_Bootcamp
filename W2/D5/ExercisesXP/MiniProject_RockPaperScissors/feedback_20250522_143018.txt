@@ -1,0 +1,16 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D5/ExercisesXP/MiniProject_RockPaperScissors/game.py
+suggestions for improvement:
+- Add input validation to `get_user_menu_choice` in `rock-paper-scissors.py` to handle non-integer or out-of-range inputs more robustly.  Consider using a loop and informative error messages.
+- Improve the error handling in `get_game_result`. Currently, if an invalid input is given, it returns 'error'. It's better to raise a `ValueError` with a descriptive message, forcing the calling function to handle the error appropriately. This improves both correctness and readability.
+- In `rock-paper-scissors.py`, add comprehensive docstrings to `get_user_menu_choice`, `print_results`, and `main` functions, mirroring the detailed docstrings in `game.py`.
+- The `print_results` function lacks error handling.  It should gracefully handle cases where the `results` dictionary is empty or contains unexpected data types.
+- Add more comprehensive tests (using `unittest` or `pytest`) to ensure all functions handle edge cases and unexpected inputs correctly.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W2/D5/ExercisesXP/MiniProject_RockPaperScissors/rock-paper-scissors.py
+suggestions for improvement:
+- The `get_user_menu_choice` function could be improved by using a loop to re-prompt the user until a valid choice is entered, instead of just returning an empty string on invalid input. This enhances user experience.
+- Add more comprehensive error handling and input validation in `main` to deal with potential exceptions or unexpected input formats.  Consider using a `try-except` block around the `new_game.play()` call to handle possible errors during game play. 
+- The `game.py` file (not included) needs to be implemented to complete the program.  The provided code assumes that file is working, but without that file, there is a missing piece of the puzzle.
+Correctness: 95%
+-----
