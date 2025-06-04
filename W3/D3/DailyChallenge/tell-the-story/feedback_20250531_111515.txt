@@ -1,0 +1,18 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/DailyChallenge/tell-the-story/index.html
+suggestions for improvement:
+- The JavaScript code (script.js) is missing, preventing a complete evaluation of correctness.  The provided HTML is a good starting point.
+- Implement input validation to handle cases where the user doesn't fill in all the fields.  The instructions specify this requirement.
+- Add error handling to gracefully manage potential issues (e.g., network errors if fetching data externally).
+- The bonus feature (shuffle button) is not implemented.  The HTML includes a placeholder for this functionality.
+- Create multiple story templates to be selected randomly.  Currently there is only one story implied.
+Correctness: 70%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D3/DailyChallenge/tell-the-story/script.js
+suggestions for improvement:
+- The instructions mention that the 'Shuffle' button should allow the user to click it at least three times to get a new story. The current implementation only allows for two shuffles before resetting.  The counter `i` should be modified accordingly.
+- The code doesn't explicitly handle cases where the user enters numbers or other unexpected input types, which could lead to unexpected story generation. Add more robust validation beyond the `isNaN` check to sanitize input better.
+- Improve error handling. Instead of simply alerting the user, provide more specific feedback about which input field has the issue.
+- Add comments to the `shuffleStory` function explaining the purpose of the array and random selection process.
+- Consider using a more descriptive variable name instead of `i` for the shuffle counter.
+Correctness: 90%
+-----

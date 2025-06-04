@@ -1,0 +1,41 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D2/exercises/xp/challenges.js
+suggestions for improvement:
+- In Exercise 6, part 1, instead of just stating the answer, the code should explicitly use comparison operators and console.log to show the evaluation.
+- In Exercise 6, part 2, the excessive comments explaining the value of each number are repetitive.  Summarize the behavior (reference and value) of object1-4 once for clarity.
+- In Exercise 6, part 2, you could improve readability by using a loop to demonstrate the behavior of the object references.  This would be more efficient than multiple console.logs.
+- Improve the formatting of the console outputs in Exercise 6 (part 2) to be more visually appealing.  Consider using template literals or a table format to organize the output.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D2/exercises/xp/daily-student-info.js
+suggestions for improvement:
+- The code is already quite readable.  Consider adding a comment explaining the purpose of the destructuring in more detail if it's unclear to others.
+- The function could be made more robust by adding error handling.  For instance, what happens if `objUser` doesn't contain `first` and `last` properties?  It would throw an error. Consider using optional chaining (?.) or a default value for cases where properties might be missing.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D2/exercises/xp/dog-class.js
+suggestions for improvement:
+- Instead of using console.log for explanations, write the analysis as comments within the code or use a separate function for explanation and analysis.
+- The code correctly identifies option 2 as the only correct way to extend the Dog class, but the explanation of why the other options are incorrect could be more concise and structured.
+- Consider adding a test case to verify the functionality of Option 2 to demonstrate its correct implementation.
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D2/exercises/xp/location.js
+suggestions for improvement:
+- The addition of the explanatory `console.log` statement in Exercise 1 is helpful but could be improved.  Instead of a generic explanation, it could explicitly state the expected output.  For example: `console.log('The expected output is: I am John Doe from Vancouver, Canada. Latitude(49.2827), Longitude(-123.1207)');` This makes it clearer what the exercise is testing.
+- Exercise 2 is missing the implementation of the `displayStudentInfo` function. The instructions clearly ask to destructure the parameter and return a string.  The code should be completed.
+- Exercise 3 should use built-in array methods like `Object.entries()` for better readability and efficiency instead of manual iteration. 
+- In Exercise 5, providing a brief explanation for why options 1, 3, and 4 are incorrect would improve the exercise's educational value.  For instance, mention the importance of calling `super()` to inherit from the parent class.
+- Exercise 6, part 2: The explanation of why `object2.number`, `object3.number` and `object4.number` have the values they do, is missing.  Explicitly stating that this is due to object references would enhance understanding.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D2/exercises/xp/person-class.js
+suggestions for improvement:
+- The code correctly predicts the output of `typeof member`.  However, the explanatory comment could be slightly improved for clarity.  Instead of saying 'in JavaScript all class instances are of the object type', it could explicitly state that the `typeof` operator returns 'object' for class instances.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D2/exercises/xp/users-id.js
+suggestions for improvement:
+- The code is well-structured and easy to follow.  Adding comments to explain the purpose of the `for` loop would enhance readability slightly.
+- Consider using `map()` for a more functional approach to multiplying the IDs. This would improve code conciseness and potentially readability for developers familiar with functional programming paradigms.
+Correctness: 100%
+-----

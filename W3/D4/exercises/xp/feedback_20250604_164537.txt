@@ -1,0 +1,89 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/find-the-sum.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/fortune-teller/index.html
+suggestions for improvement:
+- Exercise 1: Add comments explaining the predictions for each scenario, including the `const` variations.  The predictions should be explicitly stated, not just implied.
+- Exercise 1:  For better clarity, separate the code for each part (#1, #2, etc.) into distinct functions instead of having them all in the global scope.
+- Exercise 1: #5.2 - The prediction for using `const` in the if block needs to be explicit. It will throw an error because you can't redeclare a `const` within the same scope.
+- Exercise 2: The code correctly uses a ternary operator and arrow function, but adding comments explaining the logic would enhance readability.
+- Exercise 3: The arrow function is correctly implemented.  The example in the instructions is not the best one, as it includes an example of an array, but arrays are objects. Using a number or boolean would make it clearer that it's testing for the primitive type string.
+- Exercise 4:  The one-line arrow function is concise and correct. Adding a comment about its functionality is useful.
+- Exercise 5: The code demonstrates function declaration, expression, and arrow function correctly. The comment on the difference is too vague. It should clearly state the key difference: hoisting (declaration) vs. no hoisting (expression).
+- Exercise 6: The self-invoking function is implemented correctly.  However, the code to display the result in the DOM is missing, which is crucial for completing the exercise.
+- Exercise 7: The self-invoking function is correctly structured. Similar to Exercise 6, the code to add the div to the navbar is absent.
+- Exercise 8: Part I is well-implemented.  Part II requires improvements to clearly separate the logic, perhaps adding comments to define the purpose of each function and how they interact.  Also, the DOM manipulation code is missing.
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/fortune-teller/script.js
+suggestions for improvement:
+- The function's docstring could be more specific about the expected data types and potential error handling.
+- Consider adding input validation to handle unexpected input types (e.g., non-numeric number of children, non-string values for other parameters). This would improve robustness.
+- For better DOM manipulation, it's preferable to append the paragraph to a specific container rather than directly to the body. This helps in organizing the page content.
+- Use a more descriptive variable name than 'p' for better readability (e.g., 'fortuneParagraph').
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/is-it-a-string.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/juice-bar/index.html
+suggestions for improvement:
+- Exercise 1: Add comments explaining the predictions for each section (1.2, 2.2, etc.).  The current comments only indicate that a prediction should be made.  Make the predictions, and explain the reasoning behind each.
+- Exercise 1: The code lacks actual execution of the predictions.  The instructions say to 'run in the console' but don't show that happening in the provided code.
+- Exercise 3: The arrow function should be named `isString` as suggested in the prompt.
+- Exercise 5: The one-line comment about the difference between function declaration and function expression is missing.
+- Exercise 6:  The instructions say to 'display in the DOM' but there's no DOM manipulation in the provided solution. Add code to actually display the sentence on the webpage.
+- Exercise 7: The instructions state to 'add a div in the navbar' but  no HTML for the navbar is provided. The code should create the navbar if it doesn't exist, or select it if it does.  It also needs to add the div with the name and profile picture.
+- Exercise 8: Part II: The `displayJuice` function should use the `ingredients` array to display all 6 ingredients, not just the first three. The current implementation doesn't reflect that requirement.
+- General:  Add more comments throughout the code to explain what different parts are doing, improving overall readability.
+Correctness: 85%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/juice-bar/script.js
+suggestions for improvement:
+- The comments in `makeJuice` and `addIngredients` functions are good but could be slightly more concise. For example, instead of 'This function does not return a value', you could simply say 'Returns void'.
+- Consider adding input validation to the `makeJuice` function to handle invalid size inputs (e.g., an empty string or an unexpected value).  Part II does a better job of managing ingredients; consider applying a similar pattern to Part I to eliminate redundant code.
+- In Part II, the `displayJuice` function could be simplified by using `ingredients.join(', ')` directly within the `textContent` assignment to avoid creating an unnecessary intermediate variable.
+- While the code works correctly and the functions are well-structured, adding a small delay or visual feedback to indicate to the user that the juices are being added could enhance the user experience.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/kg-and-grams.js
+suggestions for improvement:
+- The comment explaining the difference between function declarations and expressions could be slightly more precise.  It could mention that function declarations are available throughout the scope before the declaration while function expressions are only available after their definition.
+- Consider adding more comprehensive comments to the code, explaining each function's purpose and the logic behind the calculation.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/scope.js
+suggestions for improvement:
+- In Exercise 1, the comments accurately predict the output of the code, but lack detailed explanations of the underlying scoping mechanisms.  Adding more explicit explanations of lexical scoping, closures, and global vs. local scope would improve understanding.
+- Exercise 1 could benefit from adding test cases.  Instead of just comments, create small test functions to verify predictions.
+- In Exercise 7, the instructions mention adding a div to the navbar with the user's name and profile picture. However, there is no provided code for this exercise.  The solution should include the HTML, CSS, and JavaScript to complete this exercise.
+Correctness: 90%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/ternary-operator.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/welcome/index.html
+suggestions for improvement:
+- Exercise 1: Add comments explaining predictions for each section (1.2, 2.2, 4.2, 5.2).  The current comments only state what to predict, not the prediction itself.
+- Exercise 1:  The code doesn't explicitly check for the 'const' scenario; it only asks what will happen.  The solution should include the actual code modification and the result.
+- Exercise 7: The `welcomeUser` function is missing. The instructions mention creating a self-invoking function that adds a div to the navbar with the user's name and profile picture.  The HTML doesn't include a placeholder for the image.
+- Exercise 7:  Improve the HTML structure for better organization and styling. The navbar could use more semantic elements.
+- General: Add error handling (e.g., `try...catch` blocks) where appropriate (especially for user input).
+- General:  Consistent use of semicolons; some lines have them, others don't.
+- General: Consider using more descriptive variable names (e.g., instead of `a`, use names that reflect their purpose).
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D4/exercises/xp/welcome/script.js
+suggestions for improvement:
+- The solution directly addresses all aspects of Exercise 7.  It creates a self-invoking function that accepts a username, generates a div element with an image and the username, and appends it to the navbar. The image source is dynamic.
+- While functional, error handling could be improved.  For example, check if the navbar element exists before appending the div to avoid errors if the navbar is missing or incorrectly named in the HTML.
+- Consider adding styling to the div to improve visual presentation.  The current implementation might result in a jarring visual experience if the div doesn't visually blend with the existing navbar style.
+- The random user image URL is a great idea for a demonstration, however, a more robust approach might involve using a user-specific image URL if one is available. This prevents showing a random image unrelated to the user.
+Correctness: 90%
+-----

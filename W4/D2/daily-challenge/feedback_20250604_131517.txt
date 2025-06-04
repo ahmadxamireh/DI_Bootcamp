@@ -1,0 +1,8 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W4/D2/daily-challenge/creating-objects.js
+suggestions for improvement:
+- Add input validation to the `Video` constructor to handle cases where parameters are not of the expected type or are missing.
+- The `watch()` method could be improved by returning a string instead of printing directly to the console.  This would make the method more reusable and testable.
+- Consider using a more descriptive name for the `createAndWatch` function, for example, `instantiateAndWatchVideo`.
+- The bonus section uses an array of objects, which is an effective approach.  However, to fully leverage object-oriented principles,  consider creating a `VideoList` class to manage the array of `Video` objects. This would encapsulate the data and related operations.
+Correctness: 95%
+-----
