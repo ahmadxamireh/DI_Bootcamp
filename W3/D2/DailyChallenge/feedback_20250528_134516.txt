@@ -1,0 +1,18 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/DailyChallenge/planets.js
+suggestions for improvement:
+- Use more descriptive variable names (e.g., `planetDiv` instead of `div`).
+- Consider using a more efficient method for positioning moons instead of relying on `style.left` which could lead to overlapping if there are too many moons. Use absolute positioning and `transform: translateX()` for better moon positioning.
+- The use of paragraph elements (`<p>`) for moons is not semantically correct. Use `div` elements instead.
+- Add error handling (e.g., check if `section.listPlanets` exists before appending).
+- Instead of using inline styles, consider creating CSS classes for the different planet colors and apply the classes dynamically. This will separate styling concerns from logic, improving the code's maintainability.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/DailyChallenge/solar_system.html
+suggestions for improvement:
+- Use a more descriptive variable name than `planets` for the array of planet objects.  Consider `solarSystemPlanets` or similar.
+- The moon creation logic could be improved for readability. Consider a helper function to create moons.
+- The colors for planets are hardcoded. It would be better to use an array of colors and assign them dynamically to avoid repetition.
+- The bonus part (moons) is partially implemented. It doesn't perfectly handle variable moon counts per planet.  The implementation should dynamically create moons based on the number of moons per planet.
+- Add comments to explain the purpose of different code sections, especially the moon creation part.
+Correctness: 85%
+-----

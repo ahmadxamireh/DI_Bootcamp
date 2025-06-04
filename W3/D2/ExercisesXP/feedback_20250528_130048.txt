@@ -1,0 +1,78 @@
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/change_the_navbar.html
+suggestions for improvement:
+- Add error handling for cases where elements might not be found (e.g., `navBar` doesn't exist).
+- The code should be more robust against unexpected HTML structures.  Consider using more specific selectors or checking for null values before accessing properties.
+- Improve variable naming for better clarity (e.g., instead of just `li`, use `newListItem`).
+- Add comments to explain the purpose of different code sections.
+- The `textContent` access might throw errors if there is no `a` tag.  Add a check to handle this gracefully.
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/change_the_navbar.js
+suggestions for improvement:
+- Add comments to explain the purpose of each section of code.  For example, before creating the new list item, a comment could say:  `// Add a new 'Logout' list item`
+- Consider using more descriptive variable names. For instance, instead of `divElem`, use `navBarDiv` or `socialNetworkNav`.  Instead of `ulListItems`, use `navList`.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/divisible_by_x.js
+suggestions for improvement:
+- The code could be slightly improved by using template literals for better string concatenation in the `displayNumbersDivisible` function.  For example, instead of `outcome += `${i} ``, you could use a more concise `outcome += `${i} `;` to handle spacing more elegantly.
+- Adding a check for valid input (divisor being a number and greater than 0) would enhance the robustness of `displayNumbersDivisible` function. 
+- Consider adding comments explaining the purpose of each variable for even better readability.
+Correctness: 100%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/my_book_list.html
+suggestions for improvement:
+- The code is missing the `my_book_list.js` file which contains the implementation.  Without it, correctness cannot be fully assessed.  The provided HTML is correct in structure.
+- Add comments to explain the purpose of different code sections and the logic behind certain decisions. This improves readability.
+- The performance is generally good for small datasets. However, for a larger number of books, consider optimizing the DOM manipulation to reduce potential reflows and repaints. Using document fragments can significantly improve performance.
+- Error handling (e.g., checking if the `allBooks` array exists or contains valid data) should be added to prevent unexpected crashes.  Currently, if the `allBooks` array is not defined, it will result in an error.
+- The code lacks input validation, which can lead to unexpected behavior or errors if the data in the `allBooks` array is not in the expected format (e.g., missing keys or incorrect data types).
+Correctness: 80%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/my_book_list.js
+suggestions for improvement:
+- Add error handling for the case where the `section.listBooks` element is not found.
+- Consider using more descriptive class names for better maintainability (e.g., instead of 'bookDiv', use 'book-container').
+- Improve the styling by separating concerns. Instead of inline styling ( `bookDiv.style.color = 'red';` ), use CSS classes for better organization and maintainability.
+- Add alt text to images for accessibility.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/shopping_list.js
+suggestions for improvement:
+- The code correctly calculates the total price of the shopping list, considering stock availability and applying the bonus feature of decreasing stock.
+- Add comments explaining the purpose of each code section to improve readability.  For example, a comment block explaining the logic of the `myBill` function would be beneficial.
+- Consider using a more descriptive variable name than `total` (e.g., `totalPrice`).
+- The error handling for cases where an item in `shoppingList` is not found in `stock` or `prices` is implicitly handled by the fact that  `prices[item]` will return `undefined` and `undefined + total` will work as 0 in JS, but it would be more robust to add explicit checks and handle these cases more gracefully.  A simple `console.warn` alerting the user of an issue would suffice
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/users.html
+suggestions for improvement:
+- The provided code is missing the `users.js` file which contains the Javascript implementation for Exercise 5.  Without this file, it's impossible to assess the correctness of the DOM manipulation tasks.
+- Add comments to the `users.js` file to explain the logic behind each DOM manipulation step. This improves readability and makes the code easier to understand and maintain.
+- Consider adding error handling to the `users.js` file. For example, what happens if the elements you are trying to manipulate don't exist?  Graceful handling of such situations improves the robustness of the code.
+- The bonus task in Exercise 5 (alerting 'Hello x and y') is not implemented.  Include this functionality in the `users.js` file to increase the correctness score.
+Correctness: 70%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/users.js
+suggestions for improvement:
+- The code for removing 'Dan' and adding a border to 'Richard' targets the wrong `<ul>` element. It should operate on the second and first `<ul>` respectively.
+- The bonus alert should ideally include users from both `<ul>` elements, not just the first one. Consider a more robust user selection mechanism.
+- Add comments to explain the logic of selecting elements.  For example, clarifying why `firstElementChild.nextElementSibling` is used.
+- Use more descriptive variable names (e.g., instead of `div`, use `containerDiv`).
+- Consider using more robust methods for adding and removing classes, e.g., `classList.add()` and `classList.remove()` instead of directly manipulating the `className` property, as `classList` provides better browser compatibility and safety.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/vacation_cost.js
+suggestions for improvement:
+- The input validation in `totalVacationCost()` could be improved.  Currently, it doesn't handle non-numeric input gracefully (e.g., letters or symbols). Consider adding more robust input validation to prevent unexpected errors.
+- Add more descriptive variable names. For example, instead of `numOfNights`, use `numberOfNights`. This improves readability.
+- The use of a `switch` statement in `planeRideCost` is appropriate for this small number of destinations.  For a larger number, consider using an object lookup for better performance and readability.
+- The comments in the code are good, but a brief description of the overall function of the program would make the top-level understanding even better.
+Correctness: 95%
+-----
+URL: URL: https://github.com/ahmadxamireh/DI_Bootcamp/blob/main/W3/D2/ExercisesXP/whats_in_my_wallet.js
+suggestions for improvement:
+- Add comments explaining the purpose of each variable and calculation.
+- Consider using a more descriptive variable name than `amountOfChange`.  Perhaps `change` or `coins` would be clearer.
+Correctness: 100%
+-----
