@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form id="myform" action="form.html" method="POST">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" name="Name" value="" size="36" />
+
+      <br /><br />
+
+      <label for="comments">Comments</label><br />
+      <textarea id="comments" name="comments" rows="5" cols="30"></textarea>
+
+      <br /><br />
+
+      <input type="submit" value="Send" />
+      <!-- The form will submit to the same page using the POST method.
+      The submitted data will appear in the Network tab, not in the URL. -->
+    </form>
+  </body>
+</html>
