@@ -13,6 +13,23 @@
       <button type="submit">Send</button>
     </form>
     <div id="result"></div>
-    <script src="script.js"></script>
+    <script>
+      const form = document.querySelector("form");
+      const result = document.getElementById("result");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Prevent default form submission
+
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        // Create a JSON object with form data
+        const jsonData = {
+          name: firstName,
+          lastname: lastName,
+        };
+        // Display JSON string in the result div
+        result.textContent = JSON.stringify(jsonData);
+      });
+    </script>
   </body>
 </html>
