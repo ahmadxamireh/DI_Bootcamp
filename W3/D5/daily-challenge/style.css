@@ -1,0 +1,100 @@
+/* Apply a gradient background to the page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ff4b4b, #ff6680);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centered container */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  margin-top: 0;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Input + ADD Button side by side */
+#task-input {
+  width: 70%;
+  padding: 10px;
+  /*border: none;*/
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Strikethrough style */
+.line-through {
+  text-decoration: line-through;
+  color: red;
+}
+
+#add-task {
+  width: 25%;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: #4a90e2;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Task list container */
+#listTasks {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Each task */
+#listTasks div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #4a90e2;
+  padding-bottom: 5px;
+}
+
+/* Task text */
+#listTasks p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Red delete "X" */
+#deleteTask {
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Font Awesome 6 Free';
+  border-radius: 3px;
+}
+
+/* Clear button */
+#clear-tasks {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  float: right;
+}
