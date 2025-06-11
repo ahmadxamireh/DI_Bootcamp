@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* 🔁 stack items vertically */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+#img {
+    width: 25%;
+}
+
+#character-container {
+    border: yellow 1px solid;
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+
+}
+
+#find-someone {
+    border: yellow 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#find-someone:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
