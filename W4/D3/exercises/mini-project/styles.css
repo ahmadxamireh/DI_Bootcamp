@@ -1,0 +1,58 @@
+body {
+    background-color: #bca8a3; /* outer background */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-container {
+    background-color: #e8dfdc; /* quote card background */
+    padding: 40px;
+    width: 550px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.generate-btn {
+    background-color: #4bc2b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0px #2a7a78;
+    transition: transform 0.1s ease;
+}
+
+#quote {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+#author {
+    font-size: 14px;
+    color: #4bc2b3;
+    text-align: right;
+    margin-top: 10px;
+}
+#likes {
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.button-row, .new-quote-container {
+    display: flex;
+    gap: 2px; /* space between buttons */
+    justify-content: center; /* centers the buttons horizontally */
+}
+
+.button-row button {
+    font-size: 10px;
+}

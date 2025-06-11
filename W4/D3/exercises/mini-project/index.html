@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form>
+  <div class="quote-container">
+    <button type="button" id="generate-btn">Generate Quote</button>
+    <section id="displayedQuote"></section>
+    <br><br>
+    <div class="button-row">
+      <button type="button" id="char-num-incl-space"># of Characters (with spaces)</button>
+      <button type="button" id="char-num-excl-space"># of Characters (without spaces)</button>
+      <button type="button" id="num-of-words">Number of Words</button>
+      <button type="button" id="num-of-likes">Likes</button>
+    </div>
+  </div>
+  <br><br>
+  <div class="new-quote-container">
+    <input type="text" id="new-quote" placeholder="New quote" required>
+    <input type="text" id="new-author" placeholder="Author's name" required>
+    <button type="button" id="add-quote-btn">Add New Quote</button>
+  </div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
