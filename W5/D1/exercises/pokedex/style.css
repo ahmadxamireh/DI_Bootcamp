@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 20%;
+}
+
+#pokedox {
+    width: 50%;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.circle-btn {
+    position: absolute;
+    top: 202px; /* adjust to your circle */
+    left: 325px; /* adjust to your circle */
+    transform: translate(-50%, -50%);
+    width: 40px; /* size of the circle */
+    height: 40px;
+    background-color: transparent; /* or transparent if you want it invisible */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-btn {
+    position: absolute;
+    top: 201px; /* adjust to your circle */
+    left: 97px; /* adjust to your circle */
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 10px;
+    background-color: transparent; /* or transparent if you want it invisible */
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.left-btn {
+    position: absolute;
+    top: 201px; /* adjust to your circle */
+    left: 70px; /* adjust to your circle */
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 10px;
+    background-color: transparent; /* or transparent if you want it invisible */
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#pokemon-data {
+    font-size: 8px;
+    position: absolute;
+    top: 205px; /* adjust to your circle */
+    left: 185px; /* adjust to your circle */
+    transform: translate(-50%, -50%);
+    border: none;
+    text-align: center;
+}
+
+#pokemon-sprite {
+    position: absolute;
+    top: 65px; /* adjust to your circle */
+    left: 185px; /* adjust to your circle */
+    transform: translate(-50%, -50%);
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+#how-to-use {
+    position: absolute;
+    top: 100px; /* adjust to your circle */
+    left: 500px; /* adjust to your circle */
+    transform: translate(-50%, -50%);
+    border: none;
+    text-align: center;
+    font-size: 12px;
+}
