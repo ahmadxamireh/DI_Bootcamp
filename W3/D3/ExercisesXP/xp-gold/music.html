@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Select a kind of Music</title>
+  </head>
+  <body>
+    <select id="genres">
+      <option value="rock">Rock</option>
+      <option value="blues" selected>Blues</option>
+    </select>
+    <script>
+      // 1. Display the value of the selected option.
+      const select = document.getElementById("genres");
+      console.log(select.value);
+      // 2. Add an option to the select tag: <option value="classic">Classic</option>
+      const newOption = new Option("Classic", "classic");
+      document.getElementById("genres").appendChild(newOption);
+      // 3. The newly added option should be selected by default.
+      newOption.selected = true;
+    </script>
+  </body>
+</html>
