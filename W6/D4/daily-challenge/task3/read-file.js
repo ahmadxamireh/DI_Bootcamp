@@ -6,8 +6,8 @@
 
 import fs from 'fs';
 
-export function readFileContent() {
-    fs.readFile('./file-data.txt', 'utf8', (err, data) => {
+export function readFileContent(filePath = './file-data.txt') {
+    fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) return console.log(err);
         console.log(data);
     });
