@@ -2,11 +2,14 @@
   "name": "daily-challenge",
   "version": "1.0.0",
   "description": "Daily challenge solution",
-  "main": "challenge.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ahmad Amireh",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
 }
