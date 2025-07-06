@@ -1,0 +1,16 @@
+{
+  "name": "exercise4",
+  "version": "1.0.0",
+  "description": "Exercise 4",
+  "main": "app.js",
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "inquirer": "^12.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Amireh",
+  "license": "ISC",
+  "type": "module"
+}
