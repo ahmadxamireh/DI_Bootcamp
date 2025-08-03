@@ -1,0 +1,133 @@
+/* ========================
+   SHARED & UTILITY STYLES
+=========================== */
+
+/* Centers any children elements within a ring using flexbox */
+.centered-children {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Blinking colon (used as time separator) */
+.colon-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    z-index: 1500;
+    pointer-events: none;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* ========================
+   RING BASE STYLES (.second)
+=========================== */
+
+/* Base ring container */
+.second {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    transition: transform 0.25s ease-in-out;
+}
+
+/* Each number in the ring */
+.second span {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    transform-origin: 50%;
+    font-size: 18px;
+    font-weight: normal;
+    color: #aaa;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Highlight the active number */
+.second span.active-second {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ========================
+   HIGHLIGHT BOXES (INDICATORS)
+=========================== */
+
+/* Box over the current second */
+.seconds-highlight-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 405px; /* matches seconds ring size */
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 6px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Box over the current minute */
+.minutes-highlight-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 355px; /* matches minutes ring size */
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 6px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Box over the current hour */
+.hours-highlight-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 305px; /* matches hours ring size */
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 6px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Larger box for general clock display */
+.clock-highlight-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 40px;
+    margin-left: 355px;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 6px;
+    z-index: 1000;
+    pointer-events: none;
+}
