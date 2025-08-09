@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // keep only settings that both frontend and backend can share safely
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    // make imports relative to the repo root
+    "baseUrl": ".",
+
+    // path alias for shared types
+    "paths": {
+      "@shared/*": ["types/*"]
+    }
+  }
+}
